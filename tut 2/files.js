@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // reading files
-// fs.readFile('./tut2/doc/blog1.txt',(err,data)=> {
+// fs.readFile('./doc/blog1.txt',(err,data)=> {
 //     if (err){
 //         console.log(err);
 //     }
@@ -10,11 +10,11 @@ const fs = require('fs');
 //console.log("last line");
 
 // writing files
-// fs.writeFile('./tut2/doc/blog1.txt','hello from Mazen',()=> {
+// fs.writeFile('./doc/blog1.txt','hello from Mazen',()=> {
 //     console.log('success');
 // });
 
-// fs.writeFile('./tut2/doc/blog2.txt','hello Again',()=> {
+// fs.writeFile('./doc/blog2.txt','hello Again',()=> {
 //     console.log('success');
 // });
 
@@ -36,8 +36,8 @@ const fs = require('fs');
 // }
 
 // deleting files
-if (fs.existsSync('./tut2/doc/deleteme.txt')) {
-  fs.unlink('./tut2/doc/deleteme.txt', (err) => {
+if (fs.existsSync('./doc/deleteme.txt')) {
+  fs.unlink('./doc/deleteme.txt', (err) => {
     if (err) {
       console.log(err);
     }
