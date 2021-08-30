@@ -1,0 +1,34 @@
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <h1><%= heading%></h1>
+    <h2>This is the Create Blog Page</h2>
+
+    <div class="create-blog content">
+      <form>
+        <label for="title">Blog title:</label>
+        <input type="text" id="title" name="title" required />
+        <label for="snippet">Blog snippet:</label>
+        <input type="text" id="snippet" name="snippet" required />
+        <label for="body">Blog body:</label>
+        <textarea id="body" name="body" required></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <!-- <p>
+      This is a Create page test. This is a Create page test. This is a Create
+      page test. This is a Create page test.
+    </p>
+    <p>
+      This is a Create page test. This is a Create page test. This is a Create
+      page test. This is a Create page test.
+    </p>
+    <p>
+      This is a Create page test. This is a Create page test. This is a Create
+      page test. This is a Create page test.
+    </p> -->
+  </body>
+  <%- include('./partials/footer.ejs') %>
+</html>

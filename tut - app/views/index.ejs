@@ -1,0 +1,28 @@
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <h1><%= heading%></h1>
+    <br />
+    <!-- <h2>All Blogs</h2> -->
+    <% if (blogs.length > 0) { %> <% blogs.forEach(blog => { %>
+    <h3 class="title"><%= blog.title %></h3>
+    <p class="snippet"><%= blog.snippet %></p>
+    <% }) %> <% } else { %>
+    <p>There are no blogs to display...</p>
+    <% } %>
+    <!-- <p>
+      This is a Home page test. This is a Home page test. This is a Home page
+      test. This is a Home page test.
+    </p>
+    <p>
+      This is a Home page test. This is a Home page test. This is a Home page
+      test. This is a Home page test.
+    </p>
+    <p>
+      This is a Home page test. This is a Home page test. This is a Home page
+      test. This is a Home page test.
+    </p> -->
+  </body>
+  <%- include('./partials/footer.ejs') %>
+</html>
