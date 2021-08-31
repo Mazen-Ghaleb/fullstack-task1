@@ -2,6 +2,9 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const blogRoutes = require('./routes/blogRoutes');
+const BooksRoutes = require('./routes/BooksRoutes');
+
+var axios = require('axios').default;
 
 // express app
 const app = express();
@@ -32,8 +35,11 @@ app.get('/about', (req, res) => {
   res.render('about', { heading: 'About Page' });
 });
 
-// blog routes
+// blog route
 app.use('/blogs', blogRoutes);
+
+// Books route
+app.use('/Books', BooksRoutes);
 
 // 404 page
 app.use((req, res) => {
