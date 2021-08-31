@@ -37,5 +37,5 @@ app.use('/blogs', blogRoutes);
 
 // 404 page
 app.use((req, res) => {
-  res.status(404).render('404', { heading: '404 - ERROR PAGE' });
+  res.status(404).render('404', { heading: 'ERROR 404' });
 });
